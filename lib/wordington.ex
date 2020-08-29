@@ -67,13 +67,10 @@ defmodule Wordington do
 
     available_char_frequency = char_frequency(available)
 
-    word_fits_in_available? =
-      Enum.all?(word_char_frequency, fn {char, freq} ->
-        available_freq = Map.get(available_char_frequency, char, 0)
-        freq <= available_freq
-      end)
-
-    word_fits_in_available?
+    Enum.all?(word_char_frequency, fn {char, freq} ->
+      available_freq = Map.get(available_char_frequency, char, 0)
+      freq <= available_freq
+    end)
   end
 
   @spec char_frequency(chars :: list(String.t())) :: map()
