@@ -2,8 +2,7 @@
 
 A way to find words (by default in Swedish) that matches both a pattern of known and unknown letters, and only containing a subset of letters.
 
-Right now the implementation is basically meant to be used in a iex shell. I might turn it into
-a library, or a web app later.
+Right now the implementation is basically meant to be used in a iex shell. However there's an online version you can play around with that uses this code: [**Ordington**](https://desolate-scrubland-88293.herokuapp.com/)
 
 ## Example
 
